@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 4em 2em;
+  background: #fafafa;
+  color: #71737f;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.6em;
+  font-weight: 200;
+  text-align: center;
+  color: #4c4e61;
+}
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.4em;
+  }
+}
+h1 span {
+  font-weight: 600;
+  display: block;
+}
+
+.intro {
+  text-align: center;
+  margin: 0 auto 4em;
+  max-width: 500px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 400px));
+  grid-gap: 2em;
+  justify-content: center;
+}
+@media screen and (min-width: 1440px) {
+  .cards {
+    grid-template-columns: repeat(3, minmax(auto, 350px));
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+.card {
+  box-shadow: 0 15px 30px -12px #71737f;
+  padding: 2em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card h2 {
+  margin: 0;
+  color: #4c4e61;
+}
+.card p {
+  font-size: 0.9em;
+  margin: 0;
+}
+.card img {
+  width: 64px;
+  height: 64px;
+  margin-top: 2em;
+  align-self: flex-end;
+}
+@media screen and (min-width: 1440px) {
+  .card img {
+    margin-top: 3em;
+  }
+}
+
+#supervisor {
+  border-top: 5px solid #45d3d3;
+}
+@media screen and (min-width: 1440px) {
+  #supervisor {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+}
+
+#team {
+  border-top: 5px solid #ea5353;
+}
+@media screen and (min-width: 1440px) {
+  #team {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+}
+
+#karma {
+  border-top: 5px solid #fcaf4a;
+}
+@media screen and (min-width: 1440px) {
+  #karma {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+}
+
+#calculator {
+  border-top: 5px solid #549ef2;
+}
+@media screen and (min-width: 1440px) {
+  #calculator {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+}
+
+footer {
+  margin-top: 4em;
+}
+
+.attribution {
+  font-size: 0.7em;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=styles.css.map */
